@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* styling for hero */
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-bottom-color 0.3s ease-in-out;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: black;
+}
+
+/*styling for todos */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.todo-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.todo-description-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #f9f9f9;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.todo-item:hover .todo-description-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
